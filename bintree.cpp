@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int MAX=4;
+int MAX=5;
 class BPTree;
 class Node
 {
@@ -122,7 +122,7 @@ void BPTree::insert(int x)
 			for(int j=cursor->size;j>i;j--)
 				cursor->key[j]=cursor->key[j-1];
 			cursor->key[i]=x;
-			cursor->size++;
+			cursor->size+=1;
 			cursor->ptr[cursor->size]=cursor->ptr[cursor->size-1];
 			cursor->ptr[cursor->size-1]=NULL;
 			cout<<"Inserted "<<x<<" Successfully\n";
@@ -157,7 +157,6 @@ void BPTree::insert(int x)
 				root->key[0]=newleaf->key[0];
 				root->ptr[0]=cursor;
 				root->ptr[1]=newleaf;
-				root->ptr[2]=NULL;
 				root->leaf=false;
 				root->size=1;
 				cout<<"Created new node\n";
