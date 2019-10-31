@@ -122,7 +122,7 @@ void BPTree::insert(int x)
 			for(int j=cursor->size;j>i;j--)
 				cursor->key[j]=cursor->key[j-1];
 			cursor->key[i]=x;
-			cursor->size++;
+			cursor->size+=1;
 			cursor->ptr[cursor->size]=cursor->ptr[cursor->size-1];
 			cursor->ptr[cursor->size-1]=NULL;
 			cout<<"Inserted "<<x<<" Successfully\n";
