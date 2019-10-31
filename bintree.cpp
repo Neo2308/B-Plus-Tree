@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int MAX=4;
+int MAX=5;
 class BPTree;
 class Node
 {
