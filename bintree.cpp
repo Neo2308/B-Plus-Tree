@@ -157,7 +157,6 @@ void BPTree::insert(int x)
 				root->key[0]=newleaf->key[0];
 				root->ptr[0]=cursor;
 				root->ptr[1]=newleaf;
-				root->ptr[2]=NULL;
 				root->leaf=false;
 				root->size=1;
 				cout<<"Created new node\n";
